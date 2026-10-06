@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luana Leal</title>
+    <meta name="description" content="Luana Leal — fotógrafa. Imagens sensíveis e reais que contam a sua história.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading">
+
+    <!-- ABERTURA (intro) -->
+    <div id="intro" class="intro" aria-hidden="true">
+        <h2 class="intro__name" id="intro-name">Luana Leal</h2>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar__inner">
+            <div class="lang-switch" role="group" aria-label="Idioma / Language">
+                <button class="lang-switch__btn is-active" data-lang="pt" aria-pressed="true">PT</button>
+                <button class="lang-switch__btn" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+
+            <div class="navbar__links">
+                <a href="#sobre" class="nav-link" data-i18n="nav.about">SOBRE MIM</a>
+                <a href="#momentos" class="nav-link" data-i18n="nav.moments">MOMENTOS</a>
+                <a href="#contato" class="nav-link" data-i18n="nav.contact">CONTATO</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="navbar__toggle" aria-label="Menu" aria-expanded="false">
+                <svg class="icon-menu" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+                <svg class="icon-close" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#sobre" class="mobile-link" data-i18n="nav.about">SOBRE MIM</a>
+            <a href="#momentos" class="mobile-link" data-i18n="nav.moments">MOMENTOS</a>
+            <a href="#contato" class="mobile-link" data-i18n="nav.contact">CONTATO</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero__bg">
+            <img src="img/capa2.webp" alt="" data-i18n-alt="alt.hero">
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__content animate-on-scroll fade-in-up" style="transition-delay: 300ms;">
+            <h1 class="hero__title">Luana Leal</h1>
+            <div class="divider divider--white"></div>
+            <p class="hero__subtitle" data-i18n="hero.subtitle">Fotógrafa</p>
+
+            <div class="cta-group">
+                <a href="#" class="btn-outline btn-outline--white js-link-budget" target="_blank" rel="noopener noreferrer" data-i18n="cta.budget">Peça seu orçamento</a>
+                <a href="#" class="btn-outline btn-outline--white js-link-instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section section--stone">
+        <div class="container container--md">
+            <div class="about">
+                <div class="about__image animate-on-scroll fade-in-left">
+                    <img src="img/sobre.jpg" alt="" data-i18n-alt="alt.about">
+                </div>
+                <div class="about__text animate-on-scroll fade-in-right" style="transition-delay: 200ms;">
+                    <h2 class="section-title" data-i18n="about.title">Olá, eu sou a Luana!</h2>
+                    <div class="divider divider--left"></div>
+
+                    <p data-i18n="about.p1">Desde criança a fotografia faz parte da minha vida, primeiro como curiosidade, depois como escolha.</p>
+
+                    <p data-i18n="about.p2">Ao longo do tempo, entendi que mais do que editar imagens, eu queria aprender a enxergar melhor. Busco usar menos edição e mais intenção, valorizando a verdade em cada detalhe, os gestos espontâneos, os olhares sinceros, a vida como ela é.</p>
+
+                    <p data-i18n="about.p3">Meu propósito é destacar quem você é de forma sensível e real, criando imagens que contem a sua história com autenticidade. Ainda estou construindo a minha trajetória, mas espero ter a oportunidade de fotografar a sua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MOMENTOS / GALERIA -->
+    <section id="momentos" class="section section--white">
+        <div class="container container--lg">
+            <div class="section-header animate-on-scroll fade-in-up">
+                <h2 class="section-title" data-i18n="moments.title">Momentos</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="gallery" id="gallery-container">
+                <!-- Renderizado pelo JS (js/main.js) -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section section--stone">
+        <div class="container container--sm">
+            <div class="section-header animate-on-scroll fade-in-up">
+                <h2 class="section-title" data-i18n="contact.title">Entre em Contato</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="cta-group animate-on-scroll fade-in-up" style="transition-delay: 200ms;">
+                <a href="#" class="btn-outline btn-outline--green js-link-budget" target="_blank" rel="noopener noreferrer" data-i18n="cta.budget">Peça seu orçamento</a>
+                <a href="#" class="btn-outline btn-outline--green js-link-instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FRASE -->
+    <section class="quote">
+        <div class="quote__bg">
+            <img src="img/frase.webp" alt="" data-i18n-alt="alt.quote">
+            <div class="quote__overlay"></div>
+        </div>
+        <div class="quote__content animate-on-scroll fade-in-up">
+            <p data-i18n="quote">"Hoje a gente vive o momento. Amanhã, a foto conta a história."</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <button id="back-to-top" class="back-to-top">
+                <span data-i18n="footer.top">Voltar ao topo</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+            </button>
+
+            <p class="footer__copy">© <span id="year"></span> Luana Leal. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox__close" aria-label="Fechar">&times;</button>
+        <button class="lightbox__nav lightbox__prev" aria-label="Anterior">&#8249;</button>
+        <img class="lightbox__img" src="" alt="">
+        <button class="lightbox__nav lightbox__next" aria-label="Próxima">&#8250;</button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
